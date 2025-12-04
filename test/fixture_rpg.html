@@ -1,0 +1,25 @@
+<tw-storydata name="RPG Story" startnode="1" creator="Twine" creator-version="2.3.9" ifid="12345">
+<tw-passagedata pid="1" name="Start" tags="" position="100,100">
+Speaker: Alistair
+Face: 6
+Music: Battle_Theme
+Type: Dialogue
+Variable: met_alistair = true
+Variable: health - 10
+Variable: power + 10
+
+Hello there! <wobbly>I am wobbly!</wobbly>
+[[will &gt; 10 | Try to Reason -&gt; Reason]]
+[[Draw your weapon -&gt; Combat]]
+</tw-passagedata>
+<tw-passagedata pid="2" name="Reason" tags="" position="300,100">
+Type: Dialogue
+
+You try to reason with him.
+</tw-passagedata>
+<tw-passagedata pid="3" name="Combat" tags="" position="500,100">
+Type: Combat
+
+En garde!
+</tw-passagedata>
+</tw-storydata>

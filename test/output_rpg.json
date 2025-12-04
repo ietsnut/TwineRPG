@@ -1,0 +1,48 @@
+{
+    "passages": [
+        {
+            "text": "Hello there! <wobbly>I am wobbly!</wobbly>\n\n\n",
+            "metadata": {
+                "speaker": "Alistair",
+                "face": "6",
+                "music": "Battle_Theme"
+            },
+            "variables": {
+                "met_alistair": "= true",
+                "health": "- 10",
+                "power": "+ 10"
+            },
+            "type": "Dialogue",
+            "links": [
+                {
+                    "condition": "will > 10",
+                    "name": "Reason",
+                    "pid": "2"
+                },
+                {
+                    "name": "Combat",
+                    "pid": "3"
+                }
+            ],
+            "name": "Start",
+            "pid": "1"
+        },
+        {
+            "text": "You try to reason with him.\n",
+            "type": "Dialogue",
+            "name": "Reason",
+            "pid": "2"
+        },
+        {
+            "text": "En garde!\n",
+            "type": "Combat",
+            "name": "Combat",
+            "pid": "3"
+        }
+    ],
+    "name": "RPG Story",
+    "startnode": "1",
+    "creator": "Twine",
+    "creator-version": "2.3.9",
+    "ifid": "12345"
+}
